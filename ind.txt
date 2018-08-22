@@ -1,0 +1,11 @@
+ <div class="sidebar-nav d-md-none" id="sidebar-nav">
+                <span class="txt">Pearl Food</span>
+                <ul>
+                    <li>
+                        <span><a href="#">home</a></span>
+                        <span class="right-div"><a class="" href="#" onclick="openItem()"><i class="fas fa-angle-right"></i></a></span>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="accommodation.html">Accommodation</a></li>
+                    <li>
+                </UL>
