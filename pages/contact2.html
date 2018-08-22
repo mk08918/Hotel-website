@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../build/image/title-icon.png" type="image/png" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contact</title>
+    <link rel="stylesheet" href="../build/css/contact2.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="../build/css/bootstrap4.css">
+
+<!-- jQuery library -->
+<script src="../build/js/jquery.js"></script>
+
+<!-- Popper JS -->
+<script src="../build/js/javascript.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="../build/js/javascript2.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!-- owl-coursel -->
+    <link rel="stylesheet" href="../build/css/owl.carousel.css">
+    <link rel="stylesheet" href="../build/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../build/css/owl.theme.default.min.css">
+
+    <!-- owl-coursel -->
+    <!-- animation -->
+    <link rel="stylesheet" href="../build/css/animate.css">
+    <!-- animation -->
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+</head>
+<body>
+
+<!-- header -->
+<!-- <div class="header"> -->
+<div class="header" id="header">    
+    <div class="container">
+   
+        <div class="row">
+            <div class="col-md-2">
+                <a class="image-anker" href="demo.html">
+                    <img class="logo" src="../build/image/pearl-second.png" alt="hotel-logo">
+                </a>
+            </div>
+            <div class="col-md-10">
+                <ul class="nav-group">
+                    <li class="nav-item selected" id="nav_item"><a href="">home</a>
+                         <ul class="sub-menu">
+                             <li class="nav-item sub-menu-active"><a class="select" href="">home1</a></li>
+                             <li class="nav-item"><a href="">home2</a></li>
+                             <li class="nav-item"><a href="">home3</a></li>
+                         </ul>
+                     </li>
+                    <li class="nav-item"><a class="activate"  href="">about us</a></li>
+                    <li class="nav-item"><a href="">Accommodation</a></li>
+                    <li class="nav-item selected"><a href="">blog</a>
+                         <ul class="sub-menu">
+                             <li class="nav-item"><a class href="">blog 1</a></li>
+                             <li class="nav-item"><a href="">blog 2</a></li>
+                         </ul>
+                     </li>
+                    <li class="nav-item selected"><a class="activate"  href="">contact us</a>
+                         <ul class="sub-menu">
+                             <li class="nav-item"><a class href="">contact-us 1</a></li>
+                             <li class="nav-item"><a href="">contact-us 2</a></li>
+                         </ul>
+                     </li>
+                     <ul class="socal-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google"></i></a></li>
+                     </ul>
+                     <ul class="phone-no">
+                         <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+123 55 33 444</span>
+                         </li>
+                     </ul>
+                </ul>
+            </div>
+        </div>
+     </div>
+    </div>
+    <!-- image section -->
+    <div class="section about-img" id="0">
+        <div class="container">
+            <div class="about-img-txt">
+                <h1>CONTACT US</h1>
+                <p>Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="select">contact Us</a></li>
+                </ul>
+            </div> 
+             
+        </div>
+    </div>
+    <!-- image section -->
+    <!-- second section -->
+    <div class="section contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-inner">
+                        <h3>Get in Touch</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor at tellus feugiat congue quis ut nunc. Semper ac dolor vitae accumsan. interdum hendrerit lacinia. Semper ac dolor vitae accumsan. interdum hendrerit lacinia. <br><br>
+
+                            f you have questions or comments, please get a hold of us in whichever way is most convenient. Ask away.
+                        </p>
+                    </div>
+                    <div class="social-links">
+                        <h5>Follow Along</h5>
+                        <ul>
+                            <li><a href="#."><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#."><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#."><i class="fab fa-google"></i></a></li>
+                            <li><a href="#."><i class="fab fa-pinterest"></i></a></li>
+                            <li><a href="#."><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                   <div class="form">
+                        <form name="contact_form" id="contact_form" method="post" onsubmit="return false">
+                                <input name="name" id="name" type="text" onkeypress="remove_contact_errors();" onblur="if(this.value == '') { this.value='Your Name'}" onfocus="if (this.value == 'Your Name') {this.value=''}" value="Your Name">
+    
+                                <input class="last" name="email_address" id="email_address" onkeypress="remove_contact_errors();" type="text" onblur="if(this.value == '') { this.value='E-mail Address'}" onfocus="if (this.value == 'E-mail Address') {this.value=''}" value="E-mail Address">
+                                
+                                <textarea name="msg" id="msg" cols="1" onkeypress="remove_contact_errors();" rows="1" onblur="if(this.value == '') { this.value='Message'}" onfocus="if (this.value == 'Message') {this.value=''}" value="Message">Message</textarea>
+    
+                                <input class="submit" type="submit" name=" " value="send message" onclick="validateContact();">
+                        </form>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- second section -->
+    <!-- map -->
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113192.13036262768!2d76.57633504339529!3d27.554624192535773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3972998fa7e65df3%3A0x38cebba39ee426f2!2sAlwar%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1533285971862" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    
+    <!-- map -->
+    <!-- nineth section -->
+    <div class="section media-tag">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="media-tag-inner">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div class="media-tag-txt">
+                                <span><strong>Phone</strong></span>
+                                <span>+123 55 33 444 888</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media-tag-inner">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div class="media-tag-txt">
+                                <span><strong>Address</strong></span>
+                                <span>80 Gotham Street, Sydney</span>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="col-md-4">
+                        <div class="media-tag-inner">
+                            <i class="fas fa-envelope"></i>
+                            <div class="media-tag-txt">
+                                <span><strong>email</strong></span>
+                                <span>Hotel@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- nineth section -->
+        <!-- footer -->
+        <div class="section footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-inner">
+                            <h5>ABOUT PEARL HOTEL</h5>
+                            <p>Lorem ipsum dolor sit consectetur adipisicing elit amet sid do eiusmod tempor labore sint occaecat Duis aute irure dolor reprehenderit Lorem ipsum dolor sit consectetur.</p>
+                            <img src="../build/image/footer-image.png" alt="Pearl-image">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-inner">
+                            <h5>NEWSLETETR</h5>
+                            <p>Stay up to date! Subscribe to us!</p>
+                            <form action="" class="footer-form">
+                                <input type="text" placeholder="Enter your e-mail address"><div class="footer-btn"><a class="footer-inner-part" href=""><i class="fas fa-envelope"></i></a></div>
+                               
+                            </form>
+                            <div class="social-icon">
+                                <h5>GET IN TOUCH</h5>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="hot-links">
+                            <h5>HOT LINKS</h5>
+                            <ul>
+                                <li><a href=""><i class="fas fa-arrow-right"></i>Home</a></li>
+                                <li><a href=""><i class="fas fa-arrow-right"></i>About us</a></li>
+                                <li><a href=""><i class="fas fa-arrow-right"></i>Accommodation</a></li>
+                                <li><a href=""><i class="fas fa-arrow-right"></i>blog</a></li>
+                                <li><a href=""><i class="fas fa-arrow-right"></i>contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer close -->
+        <!-- last section -->
+            <div class="section last-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>
+                                <p>Copyright © 2016 Pearl Hotel. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- last section -->
+     
+        <a href="#0" class="cd-top cd-is-visible cd-fade-out" id="myp"></a>
+        <script src="../build/js/owl.carousel.js"></script>
+        <script src="../build/js/index.js"></script>
+    </body>
+</html> 

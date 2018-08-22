@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="icon" href="../build/image/title-icon.png" type="image/png" sizes="16x16">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pearl</title>
+        <link rel="stylesheet" href="../build/css/demo.css">
+        <!-- bootstrap4 -->
+        <link rel="stylesheet" href="../build/css/bootstrap4.css">
+        <!-- bootstrap4 js -->
+        <link rel="stylesheet" href="../build/js/bootstrap4.js">
+        <link rel="stylesheet" href="../build/js/javascript1.js">
+        <link rel="stylesheet" href="../build/js/javascript2.js">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+</head>
+<body>
+    <!--CSS Spinner-->
+    <div class="spinner-wrapper">
+        <div class="spinner"></div>
+    </div>
+    <div class="section">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-6 p-0">
+                   <a class="hover-img" href="">
+                        <div class="hotel-demo">
+                            <img class="demo-img" src="../build/image/demo1.jpg" alt="">
+                            <div class=" col-md-12 image-inner-txt">
+                                <img src="..//build/image/hotel-demo.png" alt="">
+                            </div>
+                        </div>
+                   </a>
+                </div>
+                <div class="col-md-6 p-0">
+                   <a class="hover-img" href="index.html">
+                       <div class="hotel-demo"> <img class="demo-img" src="../build/image/demo.2.jpg" alt="">
+                            <div class="col-md-12 image-inner-txt">
+                                <img src="..//build/image/hotel-demo2.png" alt="">
+                            </div>
+                        </div>
+                   </a>
+                </div>
+                <div class="col-md-12">
+                    <div class="footer">
+                        <p>Copyright © 2016 Pearl Hotel & Restaurant. All rights reserved.
+                            <a href="">Buy Now</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script>
+    $(window).on('load', function() {
+        // Page Preloader
+        $('.spinner-wrapper').fadeOut('slow', function() {
+        $(this).remove();
+        });
+    });
+   </script>
+</body>
+</html>

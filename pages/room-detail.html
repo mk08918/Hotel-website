@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../build/image/title-icon.png" type="image/png" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>room detail</title>
+    <link rel="stylesheet" href="../build/css/room-detail.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="../build/css/bootstrap4.css">
+
+<!-- jQuery library -->
+<script src="../build/js/jquery.js"></script>
+
+<!-- Popper JS -->
+<script src="../build/js/javascript.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="../build/js/javascript2.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!-- owl-coursel -->
+    <link rel="stylesheet" href="../build/css/owl.carousel.css">
+    <link rel="stylesheet" href="../build/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../build/css/owl.theme.default.min.css">
+
+    <!-- owl-coursel -->
+    <!-- animation -->
+    <link rel="stylesheet" href="../build/css/animate.css">
+    <!-- animation -->
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+</head>
+<body>
+        <div class="sidebar-nav d-md-none" id="sidebar-nav">
+                <span class="txt">Pearl Food</span>
+                <ul>
+                    <li>
+                        <span><a href="#">home</a></span>
+                        <span class="right-div"><a class="" href="#" onclick="openItem()"><i class="fas fa-angle-right"></i></a></span>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="accommodation.html">Accommodation</a></li>
+                    <li>
+                        <span> <a href="#">Blog</a></span>
+                        <span class="right-div"><a class="" href="#" onclick="openItem2()"><i class="fas fa-angle-right"></i></a></span>
+                    </li>
+                    <li>
+                        <span><a href="#">Contact Us</a></span>
+                        <span class="right-div"><a class="" href="#" onclick="openItem3()"><i class="fas fa-angle-right"></i></a></span>
+                    </li>
+                </ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+            </div>
+            <div class="sidebar-nav d-md-none" id="sidebar-item">
+                <span class="right-div"><a class="" href="#" onclick="closeItem()"><i class="fas fa-angle-right" id="left-icon"></i></a></span>
+                <span class="txt">home</span>
+                <ul>
+                    <li>
+                        <span><a href="index.html">home page1</a></span>                
+                    </li>
+                    <li>
+                        <span><a href="home2.html">home page2</a></span>                
+                    </li>     
+                </ul>
+            </div>
+            <div class="sidebar-nav d-md-none" id="sidebar-item2">
+                <span class="right-div"><a class="" href="#" onclick="closeItem2()"><i class="fas fa-angle-right" id="left-icon"></i></a></span>
+                <span class="txt">home</span>
+                <ul>
+                    <li>
+                        <span><a href="blog.html">blog page1</a></span>                
+                    </li>
+                    <li>
+                        <span><a href="blog2.html">blog page2</a></span>                
+                    </li>     
+                </ul>
+            </div>
+            <div class="sidebar-nav d-md-none" id="sidebar-item3">
+                <span class="right-div"><a class="" href="#" onclick="closeItem3()"><i class="fas fa-angle-right" id="left-icon"></i></a></span>
+                <span class="txt">home</span>
+                <ul>
+                    <li>
+                        <span><a href="contact1.html">contact us1</a></span>                
+                    </li>
+                    <li>
+                        <span><a href="contact1.html">contact us2</a></span>                
+                    </li>     
+                </ul>
+            </div>
+    <!--CSS Spinner-->
+    <div class="spinner-wrapper">
+        <div class="spinner"></div>
+    </div>
+ <!-- moble header -->
+    <div class="section  d-block d-md-none mob-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="colxs-2">
+                    <a href="demo.html">
+                        <img class="logo" src="../build/image/pearl.png" alt="pearl-logo">
+                    </a>
+                </div>
+                <div class="col-xs-3 offset-xs-7">
+                    <div id="sidebar">
+                        <a href="#" onclick="openNav()"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- moble header -->
+<!-- header -->
+    <!-- <div class="header"> -->
+    <div class="header" id="header">    
+        <div class="container">
+    
+            <div class="row">
+                <div class="col-md-2">
+                    <a class="image-anker" href="demo.html">
+                        <img class="logo" src="../build/image/pearl-second.png" alt="hotel-logo">
+                    </a>
+                </div>
+                <div class="col-md-10">
+                    <ul class="nav-group">
+                        <li class="nav-item selected" id="nav_item"><a href="#">home</a>
+                            <ul class="sub-menu">
+                                <li class="nav-item sub-menu-active"><a class="select" href="index.html">home1</a></li>
+                                <li class="nav-item"><a href="home2.html">home2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="about.html">about us</a></li>
+                        <li class="nav-item"><a href="accommodation.html">Accommodation</a></li>
+                        <li class="nav-item selected"><a class="activate" href="#">blog</a>
+                            <ul class="sub-menu">
+                                <li class="nav-item"><a class href="blog.html">blog 1</a></li>
+                                <li class="nav-item"><a href="blog2.html">blog 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item selected"><a href="#">contact us</a>
+                            <ul class="sub-menu">
+                                <li class="nav-item"><a class href="contact1.html">contact-us 1</a></li>
+                                <li class="nav-item"><a href="contact1.html">contact-us 2</a></li>
+                            </ul>
+                        </li>
+                        <ul class="socal-icons">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google"></i></a></li>
+                        </ul>
+                        <ul class="phone-no">
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+123 55 33 444</span>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- image section -->
+    <div class="section about-img" id="0">
+        <div class="container">
+            <div class="about-img-txt">
+                <h1>room detail</h1>
+                <p>Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accommodation.html">Rooms</a></li>
+                    <li><a class="select">Room detail</a></li>
+                </ul>
+            </div> 
+             
+        </div>
+    </div>
+   
+    <!-- image section -->
+    <!-- second-section -->
+    <div class="section blog2">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="news-sec">
+                            <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false">
+
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators d-none">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"></li>
+                                    <li data-target="#demo" data-slide-to="2"></li>
+                                </ul>
+                                
+                                <!-- The slideshow -->
+                                <div class="quality-arrow">
+                                    <div class="carousel-inner">
+                                            <div class="carousel-item active"> 
+                                                <div class="slider-coursel-txt1">
+                                                    <img src="../build/image/pearl-tour1.jpg" alt="image">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="slider-coursel-txt1">
+                                                    <img src="../build/image/hotel-badroom.jpg" alt="image">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="slider-coursel-txt1">
+                                                    <img src="../build/image/pearl-tour2.jpg" alt="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Left and right controls -->
+                                    <a class="carousel-control-prev" href="#demo" data-slide="prev" id="prev">
+                                        <!-- <span class="carousel-control-prev-icon"></span> -->
+                                        <img src="../build/image/white-arrows1.jpg" alt="left-arrow-image">
+                                    </a>
+                                    <a class="carousel-control-next" href="#demo" data-slide="next" id="next">
+                                        <!-- <span class="carousel-control-next-icon"></span> -->
+                                        <img src="../build/image/white-arrows2.jpg" alt="right-arrow-image">
+                                    </a>          
+                                </div>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                        <div class="what-include">
+                            <div class="include-sec">
+                                <img src="../build/image/icon-cup.png" alt="cup">
+                                <span>Breakfast</span>
+                            </div>
+                            
+                            <div class="include-sec">
+                                <img src="../build/image/icon-ac.png" alt="ac">
+                                <span>Air Conditioning</span>
+                            </div>
+                            
+                            <div class="include-sec">
+                                <img src="../build/image/icon-led.png" alt="led tv">
+                                <span>TV LCD</span>
+                            </div>
+                            
+                            <div class="include-sec">
+                                <img src="../build/image/icon-wifi.png" alt="wifi">
+                                <span>Wi-fi service</span>
+                            </div>
+                            
+                            <div class="include-sec last">
+                                <img src="../build/image/icon-car.png" alt="car">
+                                <span>Free Parking</span>
+                            </div>
+                        </div>
+                        <div class="room-description">
+                            <h5>Room Description</h5>
+                            <p>
+                                Semper ac dolor vitae accumsan. interdum hendrerit lacinia. Etiam eget urna augue. Aenean posuere pharetra tortor eu sodales. Aenean vitae facilisis ligula. 
+                                <br><br>
+                                Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean vitae facilisis ligula. Quisque dictum neque in lectus cursus congue. Phasellus sodales condimentum rutrum.
+                            </p>
+                        </div>
+                        <div class="room-overview">
+                            <h5>Room Overview</h5>
+                            <p>Semper ac dolor vitae accumsan. interdum hendrerit lacinia. Etiam eget urna augue. Aenean posuere pharetra tortor eu sodales. Aenean vitae facilisis ligula.</p>
+                            <div class="room-overview-inner">
+                                    <div class="detail">
+                                        <span><strong>Bed:</strong> Queen</span>
+                                    </div>
+                                    <div class="detail bg-light">
+                                        <span><strong>Occupancy:</strong> 2 Persons</span>
+                                    </div>
+                                    <div class="detail">
+                                        <span><strong>Ensuite Bathroom:</strong> Yes</span>
+                                    </div>
+                                    <div class="detail bg-light">
+                                        <span><strong>Free Airport Pickup:</strong> Yes</span>
+                                    </div>
+                                    <div class="detail">
+                                        <span><strong>Breakfast Included:</strong> Yes (Continental)</span>
+                                    </div>
+                                    <div class="detail bg-light">
+                                        <span><strong>Free Internet:</strong> Yes</span>
+                                    </div>
+                                    <div class="detail">
+                                        <span><strong>Gym Access:</strong> 24/7</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="room-book">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="price">	
+                                <span>Room From Per Night</span>
+                                <span class="amount">$149</span>
+                            </div>
+                            <form action="" class="room-form">
+                                <div class="field"><input type="date" name="" placeholder="Choose A Date" id=""></div>
+                                <div class="field"><select name="" id="">
+                                    <option value="null"> Rooms</option>
+                                    <option value="1"> 1</option>
+                                    <option value="2"> 2</option>
+                                    <option value="3"> 3</option>
+                                    <option value="4"> 4</option>
+                                    <option value="5"> 5</option>
+                                    <option value="6"> 6</option>
+                                </select></div>
+                                <div class="field field2">
+                                    <select name="" id="">
+                                       <a href=""> <option value="null"> Adult</option></a>
+                                        <option value="1"> 1</option>
+                                        <option value="2"> 2</option>
+                                        <option value="3"> 3</option>
+                                        <option value="4"> 4</option>
+                                        <option value="5"> 5</option>
+                                        <option value="6"> 6</option>
+                                    </select>
+                                </div>
+                                <div class="field field3"><select name="" id="">
+                                    <option value="null"> Children</option>
+                                    <option value="1"> 1</option>
+                                    <option value="2"> 2</option>
+                                    <option value="3"> 3</option>
+                                    <option value="4"> 4</option>
+                                    <option value="5"> 5</option>
+                                    <option value="6"> 6</option>
+                                </select></div>
+                                <a href="room-detail-step.html" class="availability">Check Availability</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- second-section -->
+    <!-- nineth section -->
+    <div class="section media-tag">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="media-tag-inner">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="media-tag-txt">
+                            <span><strong>Phone</strong></span>
+                            <span>+123 55 33 444 888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media-tag-inner">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <div class="media-tag-txt">
+                            <span><strong>Address</strong></span>
+                            <span>80 Gotham Street, Sydney</span>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-md-4">
+                    <div class="media-tag-inner">
+                        <i class="fas fa-envelope"></i>
+                        <div class="media-tag-txt">
+                            <span><strong>email</strong></span>
+                            <span>Hotel@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nineth section -->
+    <!-- footer -->
+    <div class="section footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-inner">
+                        <h5>ABOUT PEARL HOTEL</h5>
+                        <p>Lorem ipsum dolor sit consectetur adipisicing elit amet sid do eiusmod tempor labore sint occaecat Duis aute irure dolor reprehenderit Lorem ipsum dolor sit consectetur.</p>
+                        <img class="img-fluid" src="../build/image/footer-image.png" alt="Pearl-image">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-inner">
+                        <h5>NEWSLETETR</h5>
+                        <p>Stay up to date! Subscribe to us!</p>
+                        <form action="" class="footer-form">
+                            <input type="text" placeholder="Enter your e-mail address"><div class="footer-btn"><a class="footer-inner-part" href=""><i class="fas fa-envelope"></i></a></div>
+                            
+                        </form>
+                        <div class="social-icon">
+                            <h5>GET IN TOUCH</h5>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="hot-links">
+                        <h5>HOT LINKS</h5>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-arrow-right"></i>Home</a></li>
+                            <li><a href="about.html"><i class="fas fa-arrow-right"></i>About us</a></li>
+                            <li><a href="accommodation.html"><i class="fas fa-arrow-right"></i>Accommodation</a></li>
+                            <li><a href="blog.html"><i class="fas fa-arrow-right"></i>blog</a></li>
+                            <li><a href="contact1.html"><i class="fas fa-arrow-right"></i>contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer close -->
+    <!-- last section -->
+        <div class="section last-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <p>Copyright © 2016 Pearl Hotel. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- last section -->
+    <a href="#0" class="cd-top cd-is-visible cd-fade-out" id="myp"></a>
+    <script src="../build/js/owl.carousel.js"></script>
+    <script src="../build/js/index.js"></script>
+</body>
+</html>

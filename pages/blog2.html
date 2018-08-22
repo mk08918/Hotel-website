@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../build/image/title-icon.png" type="image/png" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blog</title>
+    <link rel="stylesheet" href="../build/css/blog2.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="../build/css/bootstrap4.css">
+
+<!-- jQuery library -->
+<script src="../build/js/jquery.js"></script>
+
+<!-- Popper JS -->
+<script src="../build/js/javascript.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="../build/js/javascript2.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!-- owl-coursel -->
+    <link rel="stylesheet" href="../build/css/owl.carousel.css">
+    <link rel="stylesheet" href="../build/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../build/css/owl.theme.default.min.css">
+
+    <!-- owl-coursel -->
+    <!-- animation -->
+    <link rel="stylesheet" href="../build/css/animate.css">
+    <!-- animation -->
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+</head>
+<body>
+        <div class="sidebar-nav d-md-none" id="sidebar-nav">
+                <span class="txt">Pearl Food</span>
+                <ul>
+                    <li>
+                        <span><a href="#">home</a></span>
+                        <span class="right-div"><a class="" href="#" onclick="openItem()"><i class="fas fa-angle-right"></i></a></span>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="accommodation.html">Accommodation</a></li>
+                    <li>
+                        <span> <a href="#">Blog</a></span>
+                        <span class="right-div"><a class="" href="#" onclick="openItem2()"><i class="fas fa-angle-right"></i></a></span>
+                    </li>
+                    <li>
+                        <span><a href="#">Contact Us</a></span>
+                        <span class="right-div"><a class="" href="#" onclick="openItem3()"><i class="fas fa-angle-right"></i></a></span>
+                    </li>
+                </ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+            </div>
+            <div class="sidebar-nav d-md-none" id="sidebar-item">
+                <span class="right-div"><a class="" href="#" onclick="closeItem()"><i class="fas fa-angle-right" id="left-icon"></i></a></span>
+                <span class="txt">home</span>
+                <ul>
+                    <li>
+                        <span><a href="index.html">home page1</a></span>                
+                    </li>
+                    <li>
+                        <span><a href="home2.html">home page2</a></span>                
+                    </li>     
+                </ul>
+            </div>
+            <div class="sidebar-nav d-md-none" id="sidebar-item2">
+                <span class="right-div"><a class="" href="#" onclick="closeItem2()"><i class="fas fa-angle-right" id="left-icon"></i></a></span>
+                <span class="txt">home</span>
+                <ul>
+                    <li>
+                        <span><a href="blog.html">blog page1</a></span>                
+                    </li>
+                    <li>
+                        <span><a href="blog2.html">blog page2</a></span>                
+                    </li>     
+                </ul>
+            </div>
+            <div class="sidebar-nav d-md-none" id="sidebar-item3">
+                <span class="right-div"><a class="" href="#" onclick="closeItem3()"><i class="fas fa-angle-right" id="left-icon"></i></a></span>
+                <span class="txt">home</span>
+                <ul>
+                    <li>
+                        <span><a href="contact1.html">contact us1</a></span>                
+                    </li>
+                    <li>
+                        <span><a href="contact1.html">contact us2</a></span>                
+                    </li>     
+                </ul>
+            </div>
+    <!--CSS Spinner-->
+    <div class="spinner-wrapper">
+        <div class="spinner"></div>
+     </div>
+<!-- moble header -->
+    <div class="section  d-block d-md-none mob-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="colxs-2">
+                    <a href="demo.html">
+                        <img class="logo" src="../build/image/pearl.png" alt="pearl-logo">
+                    </a>
+                </div>
+                <div class="col-xs-3 offset-xs-7">
+                    <div id="sidebar">
+                        <a href="#" onclick="openNav()"></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- moble header -->
+<!-- header -->
+    <!-- <div class="header"> -->
+    <div class="header" id="header">    
+        <div class="container">
+    
+            <div class="row">
+                <div class="col-md-2">
+                    <a class="image-anker" href="demo.html">
+                        <img class="logo" src="../build/image/pearl-second.png" alt="hotel-logo">
+                    </a>
+                </div>
+                <div class="col-md-10">
+                    <ul class="nav-group">
+                        <li class="nav-item selected" id="nav_item"><a href="">home</a>
+                            <ul class="sub-menu">
+                                <li class="nav-item sub-menu-active"><a class="select" href="index.html">home1</a></li>
+                                <li class="nav-item"><a href="home2.html">home2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="">about us</a></li>
+                        <li class="nav-item"><a href="">Accommodation</a></li>
+                        <li class="nav-item selected"><a class="activate" href="#">blog</a>
+                            <ul class="sub-menu">
+                                <li class="nav-item"><a class href="blog.html">blog 1</a></li>
+                                <li class="nav-item"><a href="blog2.html">blog 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item selected"><a href="#">contact us</a>
+                            <ul class="sub-menu">
+                                <li class="nav-item"><a class href="contact1.html">contact-us 1</a></li>
+                                <li class="nav-item"><a href="contact1.html">contact-us 2</a></li>
+                            </ul>
+                        </li>
+                        <ul class="socal-icons">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google"></i></a></li>
+                        </ul>
+                        <ul class="phone-no">
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+123 55 33 444</span>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- image section -->
+    <div class="section about-img" id="0">
+        <div class="container">
+            <div class="about-img-txt">
+                <h1>LATEST NEWS</h1>
+                <p>Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="select">Latest News</a></li>
+                </ul>
+            </div> 
+             
+        </div>
+    </div>
+   
+    <!-- image section -->
+    <!-- second-section -->
+    <div class="section blog2">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="news-sec">
+                            <img class="img-fluid" src="../build/image/news-img1.jpg" alt="badroom">
+                            <div class="detail">
+                                <div class="post-writer">
+                                    <img src="../build/image/news-writer.jpg" alt="profile">
+                                    <span>John Smith</span>
+                                </div>
+                                <div class="date">
+                                    <i class="far fa-clock"></i> 
+                                    <span>Apr 22, 2016</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="#">
+                                        <i class="fas fa-comment-dots"></i> 
+                                        <span> Comments</span>
+                                    </a>
+                                </div>
+                                <div class="paragraph">
+                                    <h3>Clean Room Every Time</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor at tellus feugiat congue quis ut nunc. Semper ac dolor.</p>
+                                    <a href="#">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-sec">
+                            <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false">
+
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators d-none">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"></li>
+                                    <li data-target="#demo" data-slide-to="2"></li>
+                                </ul>
+                                
+                                <!-- The slideshow -->
+                                <div class="quality-arrow">
+                                    <div class="carousel-inner">
+                                            <div class="carousel-item active"> 
+                                                <div class="slider-coursel-txt1">
+                                                    <img src="../build/image/pearl-tour1.jpg" alt="image">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="slider-coursel-txt1">
+                                                    <img src="../build/image/hotel-badroom.jpg" alt="image">
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="slider-coursel-txt1">
+                                                    <img src="../build/image/pearl-tour2.jpg" alt="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Left and right controls -->
+                                    <a class="carousel-control-prev" href="#demo" data-slide="prev" id="prev">
+                                        <!-- <span class="carousel-control-prev-icon"></span> -->
+                                        <img src="../build/image/white-arrows1.jpg" alt="left-arrow-image">
+                                    </a>
+                                    <a class="carousel-control-next" href="#demo" data-slide="next" id="next">
+                                        <!-- <span class="carousel-control-next-icon"></span> -->
+                                        <img src="../build/image/white-arrows2.jpg" alt="right-arrow-image">
+                                    </a>          
+                                </div>
+                                <!-- </div> -->
+                            </div>
+                                <div class="detail">
+                                    <div class="post-writer">
+                                        <img src="../build/image/news-writer.jpg" alt="profile">
+                                        <span>John Smith</span>
+                                    </div>
+                                    <div class="date">
+                                        <i class="far fa-clock"></i> 
+                                        <span>Apr 22, 2016</span>
+                                    </div>
+                                    <div class="comment">
+                                        <a href="#">
+                                            <i class="fas fa-comment-dots"></i> 
+                                            <span> Comments</span>
+                                        </a>
+                                    </div>
+                                    <div class="paragraph">
+                                        <h3>Couple Area</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor at tellus feugiat congue quis ut nunc. Semper ac dolor.</p>
+                                        <a href="#">Continue Reading</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="news-sec text-based">
+                            <div class="detail detail2">
+                                <div class="post-writer">
+                                    <img src="../build/image/news-writer.jpg" alt="profile">
+                                    <span>John Smith</span>
+                                </div>
+                                <div class="date">
+                                    <i class="far fa-clock"></i> 
+                                    <span>Apr 22, 2016</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="#">
+                                        <i class="fas fa-comment-dots"></i> 
+                                        <span> Comments</span>
+                                    </a>
+                                </div>
+                                <div class="paragraph">
+                                    <h3>Hot Coffee</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor at tellus feugiat congue quis ut nunc. Semper ac dolor.</p>
+                                    <a href="#">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-sec">
+                            <img class="img-fluid" src="../build/image/freshroom.jpg" alt="badroom" id="imgg">
+                            <div class="detail">
+                                <div class="post-writer">
+                                    <img src="../build/image/news-writer.jpg" alt="profile">
+                                    <span>John Smith</span>
+                                </div>
+                                <div class="date">
+                                    <i class="far fa-clock"></i> 
+                                    <span>Apr 22, 2016</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="#">
+                                        <i class="fas fa-comment-dots"></i> 
+                                        <span> Comments</span>
+                                    </a>
+                                </div>
+                                <div class="paragraph">
+                                    <h3>Master Room</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor at tellus feugiat congue quis ut nunc. Semper ac dolor.</p>
+                                    <a href="#">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-sec">
+                            <img class="img-fluid" src="../build/image/donot-distrub.jpg" alt="badroom"id="imgg">
+                            <div class="detail">
+                                <div class="post-writer">
+                                    <img src="../build/image/news-writer.jpg" alt="profile">
+                                    <span>John Smith</span>
+                                </div>
+                                <div class="date">
+                                    <i class="far fa-clock"></i> 
+                                    <span>Apr 22, 2016</span>
+                                </div>
+                                <div class="comment">
+                                    <a href="#">
+                                        <i class="fas fa-comment-dots"></i> 
+                                        <span> Comments</span>
+                                    </a>
+                                </div>
+                                <div class="paragraph">
+                                    <h3>Do Not Disturb</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor at tellus feugiat congue quis ut nunc. Semper ac dolor.</p>
+                                    <a href="#">Continue Reading</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="recent-posts">
+                            <h6 class="bar-title">Recent Posts</h6>
+                                
+                            <div class="post-sec">
+                                <a href="#"><img src="../build/image/post1.jpg" alt="couple"></a>
+                                <a href="#" class="title">Geometric Landscapes Heartologic</a>
+                                <span class="date">11 Minutes ago</span>
+                            </div>
+                            
+                            <div class="post-sec">
+                                <a href="#"><img src="../build/image/post2.jpg" alt="hotel-dish"></a>
+                                <a href="blog-detail-hotel.html" class="title">Geometric Landscapes Heartologic</a>
+                                <span class="date">2 Days ago</span>
+                            </div>
+                            <div class="post-sec">
+                                <a href="#"><img src="../build/image/post3.jpg" alt="coluple"></a>
+                                <a href="#" class="title">Geometric Landscapes Heartologic</a>
+                                <span class="date">3 months ago</span>
+                            </div>    
+                        </div>
+                        <div class="categories">
+                            <h6>Categories</h6>
+                            <ul>
+                                <li><a href="#."> Facelift</a></li>
+                                <li><a href="#."> Dental</a></li>
+                                <li><a href="#."> Tummy Tuck</a></li>
+                                <li><a href="#."> Colonoscopy</a></li>
+                                <li><a href="#."> Heart Patient</a></li>
+                                <li><a href="#."> Chin Implant</a></li>
+                            </ul>
+                        </div>
+                        <div class="tags">
+                            <h6 class="bar-title">Tags</h6>
+                            <div class="all-tags">
+                                <a href="#.">Benefits</a>
+                                <a href="#.">Kids Health </a>
+                                <a href="#.">Body Lift</a>
+                                <a href="#.">Trunk Liposuction</a>
+                                <a href="#.">Liposuction</a>
+                                <a href="#.">ill</a>
+                                <a href="#.">Cardiac ablation</a>
+                                <a href="#.">Clean Environment</a>
+                                <a href="#.">Benefits </a>
+                                <a href="#.">Kids Health </a>
+                                <a href="#.">Body Lift</a>
+                                <a href="#.">Trunk Liposuction</a>
+                                <a href="#.">Liposuction</a>
+                                <a href="#.">ill</a>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <input name=" " type="text" onblur="if(this.value == '') { this.value='Search here'}" onfocus="if (this.value == 'Search here') {this.value=''}" value="Search here">
+                            <a href="#."><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div
+                >
+            </div>
+        </div>
+    </div>
+    <!-- second-section -->
+    <!-- nineth section -->
+    <div class="section media-tag">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="media-tag-inner">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="media-tag-txt">
+                            <span><strong>Phone</strong></span>
+                            <span>+123 55 33 444 888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media-tag-inner">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <div class="media-tag-txt">
+                            <span><strong>Address</strong></span>
+                            <span>80 Gotham Street, Sydney</span>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-md-4">
+                    <div class="media-tag-inner">
+                        <i class="fas fa-envelope"></i>
+                        <div class="media-tag-txt">
+                            <span><strong>email</strong></span>
+                            <span>Hotel@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nineth section -->
+    <!-- footer -->
+    <div class="section footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-inner">
+                        <h5>ABOUT PEARL HOTEL</h5>
+                        <p>Lorem ipsum dolor sit consectetur adipisicing elit amet sid do eiusmod tempor labore sint occaecat Duis aute irure dolor reprehenderit Lorem ipsum dolor sit consectetur.</p>
+                        <img class="img-fluid" src="../build/image/footer-image.png" alt="Pearl-image">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-inner">
+                        <h5>NEWSLETETR</h5>
+                        <p>Stay up to date! Subscribe to us!</p>
+                        <form action="" class="footer-form">
+                            <input type="text" placeholder="Enter your e-mail address"><div class="footer-btn"><a class="footer-inner-part" href=""><i class="fas fa-envelope"></i></a></div>
+                            
+                        </form>
+                        <div class="social-icon">
+                            <h5>GET IN TOUCH</h5>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="hot-links">
+                        <h5>HOT LINKS</h5>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-arrow-right"></i>Home</a></li>
+                            <li><a href="home2.html"><i class="fas fa-arrow-right"></i>About us</a></li>
+                            <li><a href="accommodation.html"><i class="fas fa-arrow-right"></i>Accommodation</a></li>
+                            <li><a href="blog.html"><i class="fas fa-arrow-right"></i>blog</a></li>
+                            <li><a href="contact1.html"><i class="fas fa-arrow-right"></i>contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer close -->
+    <!-- last section -->
+        <div class="section last-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <p>Copyright © 2016 Pearl Hotel. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- last section -->
+    <a href="#0" class="cd-top cd-is-visible cd-fade-out" id="myp"></a>
+    <script src="../build/js/owl.carousel.js"></script>
+    <script src="../build/js/index.js"></script>
+</body>
+</html>
